@@ -2,10 +2,11 @@ import React from "react";
 import { BiLogoMediumOld } from "react-icons/bi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
+import "./NavBar.scss";
 
 const NavBar = () => {
   return (
-    <div className="NavBar">
+    <div className="navBar">
       <div className="logoDiv">
         <BiLogoMediumOld className="icon" />
         <span>Suc-cess Trips</span>
