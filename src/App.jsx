@@ -12,18 +12,18 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   return (
       <>
-          <h1>Guf</h1>
+         
           
           
       <NavBar />
-      <Home />
+      {/* <Home />
       <Middle />
       <Destinations />
       <Portfolio />
       <Questions />
       <Reviews />
       <Subscribe />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
