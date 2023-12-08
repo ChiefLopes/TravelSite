@@ -1,13 +1,31 @@
-import "./App.scss"
+import "./App.scss";
+import Home from "./Components/Home/Home";
+import NavBar from "./Components/Navbar/NavBar";
+import Middle from "./Components/Middle/Middle";
+import Destinations from "./Components/Destinations/Destinations";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Questions from "./Components/Questions/Questions";
+import Reviews from "./Components/Reviews/Reviews";
+import Subscribe from "./Components/Subscribe/Subscribe";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
-
-
   return (
-    <>
-      <h1 className="text">Hello</h1>
+      <>
+          <h1>Guf</h1>
+          
+          
+      <NavBar />
+      <Home />
+      <Middle />
+      <Destinations />
+      <Portfolio />
+      <Questions />
+      <Reviews />
+      <Subscribe />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
