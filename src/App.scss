@@ -27,5 +27,80 @@ root {
   --normalFontSize: 0.938rem;
   --smallFontSize: 0.813rem;
   --smallestFontSize: 0.75rem;
-  --borderRadius: 3rem
+  --borderRadius: 3rem;
+}
+
+body {
+  background: var(--bgColor);
+}
+
+// Default Styling
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+p {
+  font-size: var(--smallFontSize);
+}
+
+html {
+  font-size: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.icon {
+  font-size: var(--h2FontSize);
+  cursor: pointer;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: 0.75rem 1rem;
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s ease;
+  }
+}
+
+.secTitle {
+  display: none;
+  color: var(--blackColor);
+  padding: 1rem 0;
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--blackColor);
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    color: var(--blackColor);
+    font-size: var(--normalFontSize);
+    font-weight: 400;
+  }
 }
