@@ -1,10 +1,19 @@
-import React from "react";
+import { useState } from "react";
 import { BiLogoMediumOld } from "react-icons/bi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
 import "./NavBar.scss";
 
 const NavBar = () => {
+  // State to track and update navBar
+  const [navBar, setNavBar] = useState(false);
+
+  // Function to show navBar
+
+  const showNavBar = () => {
+    setNavBar(!navBar);
+  };
+
   return (
     <div className="navBar">
       <div className="logoDiv">
@@ -20,13 +29,13 @@ const NavBar = () => {
           </ul>
 
           {/* Icon to remove navBar */}
-          <AiFillCloseCircle className="icon" />
+          <AiFillCloseCircle className="icon closeIcon" />
         </div>
 
         <button className="signUpBtn btn">Sign Up</button>
 
         {/* Icon to toggle navBar */}
-        <PiDotsNineBold className="icon"/>
+        <PiDotsNineBold className="icon menuIcon" onClick={showNavBar} />
       </div>
     </div>
   );
