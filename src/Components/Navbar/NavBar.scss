@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-    
 }
 
 // All Project colors
@@ -39,52 +38,69 @@
   padding: 1.5rem 2rem;
   position: fixed;
   border-bottom: 1.5px solid var(--primaryColor);
-  background: #daa3a3;
+  //   background: #daa3a3;
   backdrop-filter: blur(5px);
-}
 
-.logoDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  span {
-    color: var(--blackColor);
-    font-size: var(--h3FontSize);
+  .logoDiv {
+    display: flex;
+    align-items: center;
     justify-content: center;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .menu {
+    span {
+      color: var(--blackColor);
+      font-size: var(--h3FontSize);
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      position: absolute;
+      width: 70%;
+      top: -100rem;
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      background: rgba(255, 255, 255, 0.94);
+      padding: 2rem;
+      border-radius: 10px;
+      transition: 0.8s ease-in-out;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
+    }
+
+    li {
+      font-size: var(--h3FontSize);
+      font-weight: 500;
+      padding: 1rem;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--primaryColor);
+        border-bottom: 1.5px solid var(--primaryColor);
+      }
+    }
+  }
+
+  .menuIcon, .closeIcon {
+    font-size: var(--h1FontSize);
+
+    &:hover {
+      color: var(--primaryColor);
+    }
+  }
+
+  .closeIcon {
     position: absolute;
-    width: 70%;
-    top: 8rem;
+    bottom: -15px;
     right: 50%;
     left: 50%;
+    color: var(--blackColor);
     transform: translate(-50%);
-    background: rgba(255, 255, 255, 0.94);
-    padding: 2rem;
-    border-radius: 10px;
-    transition: 0.8s ease-in-out;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
   }
-  
-  li {
-   font-size: var(--h3FontSize);
-   font-weight: 500;
-   padding: 1rem;
-   text-align: center;
-   cursor: pointer;
-   
-   &:hover {
-     color: var(--primaryColor);
-     border-bottom: 1.5px solid var(--primaryColor);
-   }
-}
-}
 
-.signUpBtn {
-   
+  .showNavbar {
+    top: 8rem;
+  }
 }
