@@ -6,12 +6,12 @@ import "./NavBar.scss";
 
 const NavBar = () => {
   // State to track and update navBar
-  const [navBar, setNavBar] = useState(false);
+  const [navBar, setNavBar] = useState("menu");
 
   // Function to show navBar
 
   const showNavBar = () => {
-    setNavBar(!navBar);
+    setNavBar("menu showNavbar");
   };
 
   return (
@@ -20,7 +20,7 @@ const NavBar = () => {
         <BiLogoMediumOld className="icon" />
         <span>Suc-cess Trips</span>
 
-        <div className="menu">
+        <div className={navBar }>
           <ul>
             <li className="navList">Destination</li>
             <li className="navList">Testimonial</li>

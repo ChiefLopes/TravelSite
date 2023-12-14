@@ -83,7 +83,7 @@
     }
   }
 
-  .menuIcon .closeIcon {
+  .menuIcon, .closeIcon {
     font-size: var(--h1FontSize);
 
     &:hover {
