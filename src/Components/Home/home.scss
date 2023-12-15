@@ -29,3 +29,22 @@
   --smallestFontSize: 0.75rem;
   --borderRadius: 3rem;
 }
+
+.Home {
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+    
+    .videoBg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+    
+    video {
+       height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+}
