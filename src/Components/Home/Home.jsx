@@ -22,7 +22,17 @@ const Home = () => {
         <button>
           GET STARTED <AiOutlineSwapRight />
         </button>
-      </div>
+          </div>
+          
+          <div className="popularPlaces">
+              <div className="content">
+                  <h3>Popular Places</h3>
+                  
+                  <div className="image flex">
+                      
+                  </div>
+              </div>
+          </div>
     </div>
   );
 }
