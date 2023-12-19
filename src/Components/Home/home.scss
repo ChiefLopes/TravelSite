@@ -31,20 +31,34 @@
 }
 
 .Home {
-    position: relative;
-    height: 95vh;
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  top: 0;
+
+  .videoBg {
+    position: absolute;
+    height: 100%;
     width: 100%;
-    top: 0;
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .sectionText {
+    position: absolute;
+    height: 100%;
+    top: 30%;
+    bottom: 50%;
+    color: var(--whiteColor);
+    padding: 0 1.3rem;
     
-    .videoBg {
-      position: absolute;
-      height: 100%;
-      width: 100%;
+    h1{
+      font-size: var(--biggestFontSize);
+      font-weight: 900;
     }
-    
-    video {
-       height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
+  }
 }
