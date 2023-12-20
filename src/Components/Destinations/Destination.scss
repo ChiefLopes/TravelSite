@@ -21,11 +21,56 @@
 
   //    Fonts and Typography
   --biggestFontSize: 2.5rem;
-  --h1FontSize: 2rem;
+  --h1FontSize: 1.6rem;
   --h2FontSize: 1.25rem;
   --h3FontSize: 1rem;
   --normalFontSize: 0.938rem;
   --smallFontSize: 0.813rem;
   --smallestFontSize: 0.75rem;
   --borderRadius: 3rem;
+}
+
+.destination {
+  .secContainer {
+    .redText {
+      color: var(--primaryColor);
+      font-size: var(--smallFontSize);
+      font-weight: 500;
+    }
+
+    h3 {
+      font-size: var(--h3FontSize);
+    }
+
+    .searchField {
+      margin-top: 2rem;
+      gap: 1rem;
+
+      .inputField {
+        background: var(--primaryColorLight);
+        padding: 1rem;
+        border-radius: var(--borderRadius);
+        gap: 0.5rem;
+
+        input {
+          background: transparent;
+          border: none;
+          outline: none;
+          width: 100%;
+        }
+
+        .icon {
+          color: var(--blackColor);
+        }
+      }
+
+      .btn {
+        gap: .5rem;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }
