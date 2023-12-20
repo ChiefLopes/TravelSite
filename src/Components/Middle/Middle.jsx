@@ -1,4 +1,4 @@
-
+import "./Middle.scss"
 
 
 const Middle = () => {
