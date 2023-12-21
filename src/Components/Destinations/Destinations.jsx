@@ -1,8 +1,18 @@
 import "./Destination.scss";
+
+// Imported Icons
 import { MdLocationPin } from "react-icons/md";
 import { BsFillCreditCardFill } from "react-icons/bs";
 import { BsFillCalendar2DateFill } from "react-icons/bs";
 import { BiSearchAlt } from "react-icons/bi";
+import { TiLocation } from "react-icons/ti";
+
+// Imported photos
+import photo1 from "../../Asset/photo1.jpg";
+import photo2 from "../../Asset/photo2.jpg";
+import photo3 from "../../Asset/Photo3.jpg";
+import photo4 from "../../Asset/photo4.jpg";
+import photo5 from "../../Asset/photo5.jpg";
 
 const Destinations = () => {
   return (
@@ -40,22 +50,31 @@ const Destinations = () => {
 
         <div className="secMenu">
           <ul className="flex">
-                      <li className="active">All</li>
-                      <li>Recommended</li>
-                      <li>Beach</li>
-                      <li>Park</li>
-                      <li>Nature</li>
-                      <li>Mountain</li>
+            <li className="active">All</li>
+            <li>Recommended</li>
+            <li>Beach</li>
+            <li>Park</li>
+            <li>Nature</li>
+            <li>Mountain</li>
           </ul>
+        </div>
+
+        <div className="destinationContainer grid">
+          <div className="singleDestination">
+            <div className="imgDiv">
+              <img src={photo1} alt="Destination image" />
+
+              <div className="descInfo flex">
+                <div className="text">
+                  <span className="name">Baro baro Island</span>
+                                  <p className="flex">
+                                      
+                </p>
+                </div>
               </div>
-              
-              <div className="destinationContainer grid">
-                  <div className="singleDestination">
-                      <div className="imgDiv">
-                           
-                      </div>
-                  </div>
-              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
