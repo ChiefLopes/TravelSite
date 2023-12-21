@@ -13,6 +13,69 @@ import photo2 from "../../Asset/photo2.jpg";
 import photo3 from "../../Asset/Photo3.jpg";
 import photo4 from "../../Asset/photo4.jpg";
 import photo5 from "../../Asset/photo5.jpg";
+import photo6 from "../../Asset/photo6.jpg";
+import photo7 from "../../Asset/photo7.jpg";
+import photo8 from "../../Asset/photo8.jpg";
+
+// An array that has all detination data so we can loop through them
+const destinationData = [
+  {
+    id: 1,
+    img: photo1,
+    name: "Seychelles Island",
+    location: "Indian Ocean",
+    rating: 4.7,
+  },
+  {
+    id: 2,
+    img: photo2,
+    name: "Bora bora Island",
+    location: "Polynesia",
+    rating: 4.3,
+  },
+  {
+    id: 3,
+    img: photo3,
+    name: "Maldives Island",
+    location: "Indian Ocean",
+    rating: 4.9,
+  },
+  {
+    id: 4,
+    img: photo4,
+    name: "Santorini Island",
+    location: "Greece",
+    rating: 4.5,
+  },
+  {
+    id: 5,
+    img: photo5,
+    name: "Bali Island",
+    location: "Indonesia",
+    rating: 4.9,
+  },
+  {
+    id: 6,
+    img: photo6,
+    name: "Maui Island",
+    location: "Hawaii, USA",
+    rating: 4.7,
+  },
+  {
+    id: 7,
+    img: photo7,
+    name: "Capri Island",
+    location: "Italy",
+    rating: 4.7,
+  },
+  {
+    id: 8,
+    img: photo8,
+    name: "Fiji Island",
+    location: "South Pacific",
+    rating: 4.4,
+  },
+];
 
 const Destinations = () => {
   return (
@@ -60,22 +123,25 @@ const Destinations = () => {
         </div>
 
         <div className="destinationContainer grid">
-          <div className="singleDestination">
-            <div className="imgDiv">
-              <img src={photo1} alt="Destination image" />
+          {destinationData.map((destination) => {
+            return (
+              <div key={destination.id} className="singleDestination">
+                <div className="imgDiv">
+                  <img src={destination.img} alt="Destination image" />
 
-              <div className="descInfo flex">
-                <div className="text">
-                                  <span className="name">
-                                      Baro baro Island</span>
-                  <p className="flex">
-                    <TiLocation /> Netherlands
-                  </p>
+                  <div className="descInfo flex">
+                    <div className="text">
+                                <span className="name">{destination.name}</span>
+                      <p className="flex">
+                        <TiLocation /> {destination.location}
+                      </p>
+                    </div>
+                    <span className="rating">4.6</span>
+                  </div>
                 </div>
-                <span className="rating">4.6</span>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>
