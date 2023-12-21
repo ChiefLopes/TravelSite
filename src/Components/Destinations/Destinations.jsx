@@ -71,6 +71,9 @@ const Destinations = () => {
                     <TiLocation /> Netherlands
                   </p>
                 </div>
+                              <span className="rating">
+                                4.6  
+                </span>
               </div>
             </div>
           </div>
