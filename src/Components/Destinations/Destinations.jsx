@@ -66,14 +66,13 @@ const Destinations = () => {
 
               <div className="descInfo flex">
                 <div className="text">
-                  <span className="name">Baro baro Island</span>
+                                  <span className="name">
+                                      Baro baro Island</span>
                   <p className="flex">
                     <TiLocation /> Netherlands
                   </p>
                 </div>
-                              <span className="rating">
-                                4.6  
-                </span>
+                <span className="rating">4.6</span>
               </div>
             </div>
           </div>

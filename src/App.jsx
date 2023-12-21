@@ -12,9 +12,6 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   return (
       <>
-         
-          
-          
       <NavBar />
       <Home />
       <Middle />
