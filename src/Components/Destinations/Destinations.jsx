@@ -131,12 +131,12 @@ const Destinations = () => {
 
                   <div className="descInfo flex">
                     <div className="text">
-                                <span className="name">{destination.name}</span>
+                      <span className="name">{destination.name}</span>
                       <p className="flex">
                         <TiLocation /> {destination.location}
                       </p>
                     </div>
-                    <span className="rating">4.6</span>
+                    <span className="rating">{destination.rating}</span>
                   </div>
                 </div>
               </div>
