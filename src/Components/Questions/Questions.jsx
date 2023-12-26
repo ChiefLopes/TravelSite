@@ -1,5 +1,5 @@
 import Accordion from "./Accordion";
-import "./Questions.scss" 
+import "./Questions.scss";
 
 const Questions = () => {
   return (
@@ -9,25 +9,30 @@ const Questions = () => {
       </div>
 
       <div className="sceContainer grid">
-        <div className="accordion grid"> <Accordion /></div>
+        <div className="accordion grid">
+          {" "}
+          <Accordion />
+          <Accordion />
+        </div>
 
         <div className="form">
           <div className="secHeading">
-                      <h4>Do You Have any specific questions?</h4>
-                      <p>
-                          Please fill the form below and our dedicated team will get in touch with you as soon as possible.
-                      </p>
-                  </div>
-                  
-                  <div className="formContent grid">
-                      <input type="email" placeholder="Enter e-mail address" />
-                      <textarea placeholder="Enter Your question here"></textarea>
-                      <button className="btn">Submit Inquiry</button>
-                  </div>
+            <h4>Do You Have any specific questions?</h4>
+            <p>
+              Please fill the form below and our dedicated team will get in
+              touch with you as soon as possible.
+            </p>
+          </div>
+
+          <div className="formContent grid">
+            <input type="email" placeholder="Enter e-mail address" />
+            <textarea placeholder="Enter Your question here"></textarea>
+            <button className="btn">Submit Inquiry</button>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Questions
+export default Questions;
