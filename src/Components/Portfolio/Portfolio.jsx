@@ -2,6 +2,7 @@ import safetyIcon from "../../Asset/icons/safety.svg";
 import destIcon from "../../Asset/icons/destination.svg";
 import Support from "../../Asset/icons/customerSupport.svg";
 import manAtBeach from "../../Asset/manAtBeach.jpg"
+import "./Portfolio.scss"
 
 const Portfolio = () => {
   return (
@@ -59,7 +60,7 @@ const Portfolio = () => {
           </div>
               </div>
               <div className="rightContent">
-                  <img src={manAtBeach} alt="man at a beach" />
+                  <img src={manAtBeach} alt="man at a beach" className="manAtBeach"/>
               </div>
       </div>
     </div>

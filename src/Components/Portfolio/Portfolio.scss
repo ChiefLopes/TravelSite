@@ -29,3 +29,24 @@
   --smallestFontSize: 0.75rem;
   --borderRadius: 3rem;
 }
+
+.portfolio {
+  .secContainer {
+    gap: 2rem;
+    .leftContent {
+      .grid {
+        .singlePortfolio {
+          gap: 1rem;
+          align-items: flex-start;
+
+          .iconDiv {
+            img {
+              height: 50px;
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
