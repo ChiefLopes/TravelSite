@@ -7,11 +7,11 @@ const Accordion = ({ title, desc, active, setActive }) => {
       <span
         className={(active === title ? "activeTitle " :  "" ) + "flex " + "title "}>
         {title}
-        <span>
+        <span onClick={() => setActive(title)}>
           <BsArrowDownCircle className="icon" />
         </span>
       </span>
-      <p className="description">{desc}</p>
+      <p className={(active === title ? "show " : "") + "description "}>{desc}</p>
     </div>
   );
 };

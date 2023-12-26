@@ -4,7 +4,7 @@ import "./Questions.scss";
 
 const Questions = () => {
   const [active, setActive] = useState(
-    "How do I choose the right destination for me?"
+    "title2"
   );
 
   return (
@@ -16,17 +16,17 @@ const Questions = () => {
       <div className="sceContainer grid">
         <div className="accordion grid">
           <Accordion
-            title="How do I choose the right destination for me?"
+            title="title1"
             desc="Consider your interests, budget desired experiences, and the type of environment you enjoy. Research destinations that align with your preferences and offer attractions or activities you find appealing."
             active={active}
             setActive={setActive}
           />
-          {/* <Accordion
-            title="How do I choose the right destination for me?"
+          <Accordion
+            title="title2"
             desc="Consider your interests, budget desired experiences, and the type of environment you enjoy. Research destinations that align with your preferences and offer attractions or activities you find appealing."
             active={active}
             setActive={setActive}
-          /> */}
+          />
         </div>
 
         <div className="form">
