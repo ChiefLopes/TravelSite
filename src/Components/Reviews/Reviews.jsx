@@ -1,5 +1,16 @@
-import React from 'react'
+import "./Reviews.scss"
+
+// Imported Icon
 import { AiFillStar } from "react-icons/ai";
+
+// Imported Images
+import client1 from "../../Asset/clients/client1.jpg"
+import client2 from "../../Asset/clients/client2.jpg"
+import client3 from "../../Asset/clients/client3.jpg"
+import client4 from "../../Asset/clients/client4.jpg"
+import client5 from "../../Asset/clients/client5.jpg"
+
+
 
 const Reviews = () => {
   return (
@@ -19,8 +30,16 @@ const Reviews = () => {
             <AiFillStar className='icon'/>
             <AiFillStar className='icon'/>
             <AiFillStar className='icon'/>
-          </span>
-        </div>
+                  </span>
+                  
+                  <div className="clientsImages flex">
+                      <img src={client1} alt="client image" />
+                      <img src={client2} alt="client image" />
+                      <img src={client3} alt="client image" />
+                      <img src={client4} alt="client image" />
+                  </div>
+              </div>
+              <img src={client5} alt="Div Image" />
       </div>
     </div>
   );
