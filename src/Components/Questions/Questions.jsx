@@ -28,8 +28,14 @@ const Questions = () => {
             setActive={setActive}
           />
           <Accordion
-            title="What are the best times to visit specific destinations?"
-            desc="Research the climate, weather patterns and peak tourist seasons of the destination you are interested in. Opt for the shoulder seasons when the weather is pleasant, and crowds are fewer if possible"
+            title="How can i find budget-friendly option travel options and deals?"
+            desc="Look for travel deals, discounts on flights and accommodations, and consider using travel apps or websites that offer competitive prices. Being flexible with your travel dates can also help you find better deals."
+            active={active}
+            setActive={setActive}
+          />
+          <Accordion
+            title="What essential items should I pick for my adventure?"
+            desc="Pack appropriate clothings,toiletries, travel documents(passport, visa, etc), essential medications and any specific gear needed for your adventure(e.g hiking boots, snorkeling gear)."
             active={active}
             setActive={setActive}
           />
