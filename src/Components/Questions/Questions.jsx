@@ -1,3 +1,4 @@
+import Accordion from "./Accordion";
 import "./Questions.scss" 
 
 const Questions = () => {
@@ -8,7 +9,7 @@ const Questions = () => {
       </div>
 
       <div className="sceContainer grid">
-        <div className="accordion grid"></div>
+        <div className="accordion grid"> <Accordion /></div>
 
         <div className="form">
           <div className="secHeading">
@@ -21,6 +22,7 @@ const Questions = () => {
                   <div className="formContent grid">
                       <input type="email" placeholder="Enter e-mail address" />
                       <textarea placeholder="Enter Your question here"></textarea>
+                      <button className="btn">Submit Inquiry</button>
                   </div>
         </div>
       </div>
