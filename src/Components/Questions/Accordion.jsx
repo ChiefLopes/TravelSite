@@ -1,19 +1,18 @@
-import "./Questions.scss"
-import { BsArrowDownCircleFill } from "react-icons/bs";
+import "./Questions.scss";
+import { BsArrowDownCircle } from "react-icons/bs";
 
-const Accordion = ({title, desc, active, setActive}) => {
-    
-    
-    
+const Accordion = ({title, desc}) => {
   return (
     <div className="accordionContainer">
-      <span className={(active === title ? "activeTitle" : "") + "title" + "flex"}>
-       {title}
+      <span className="title flex">
+     {title}
         <span>
-          <BsArrowDownCircleFill className="icon" />
+          <BsArrowDownCircle className="icon" />
         </span>
-      </span> 
-      <p className={(active === title ? "show" : "")}>{desc}</p>
+      </span>
+      <p className="description">
+        {desc}
+      </p>
     </div>
   );
 };
