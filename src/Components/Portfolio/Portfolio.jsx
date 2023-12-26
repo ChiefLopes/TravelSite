@@ -1,12 +1,13 @@
 import safetyIcon from "../../Asset/icons/safety.svg";
 import destIcon from "../../Asset/icons/destination.svg";
 import Support from "../../Asset/icons/customerSupport.svg";
+import manAtBeach from "../../Asset/manAtBeach.jpg"
 
 const Portfolio = () => {
   return (
     <div className="portfolio section container">
       <div className="secContainer grid">
-        <div className="leftContainer">
+        <div className="leftContent">
           <div className="secHeading">
             <h3>Why You should Choose Us?</h3>
             <p>
@@ -56,7 +57,10 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-        </div>
+              </div>
+              <div className="rightContent">
+                  <img src={manAtBeach} alt="man at a beach" />
+              </div>
       </div>
     </div>
   );
