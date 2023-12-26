@@ -25,21 +25,24 @@ const Reviews = () => {
             unforgettable memories that will last a lifetime.
           </p>
           <span className="stars flex">
-            <AiFillStar className='icon'/>
-            <AiFillStar className='icon'/>
-            <AiFillStar className='icon'/>
-            <AiFillStar className='icon'/>
-            <AiFillStar className='icon'/>
-                  </span>
-                  
-                  <div className="clientsImages flex">
-                      <img src={client1} alt="client image" />
-                      <img src={client2} alt="client image" />
-                      <img src={client3} alt="client image" />
-                      <img src={client4} alt="client image" />
-                  </div>
-              </div>
-              <img src={client5} alt="Div Image" />
+            <AiFillStar className="icon" />
+            <AiFillStar className="icon" />
+            <AiFillStar className="icon" />
+            <AiFillStar className="icon" />
+            <AiFillStar className="icon" />
+          </span>
+
+          <div className="clientsImages flex">
+            <img src={client1} alt="client image" />
+            <img src={client2} alt="client image" />
+            <img src={client3} alt="client image" />
+            <img src={client4} alt="client image" />
+          </div>
+        </div>
+
+        <div className="imgDiv">
+          <img src={client5} alt="Div Image" />
+        </div>
       </div>
     </div>
   );
