@@ -1,16 +1,19 @@
 import "./Questions.scss"
 import { BsArrowDownCircleFill } from "react-icons/bs";
 
-const Accordion = () => {
+const Accordion = ({title, desc, active, setActive}) => {
+    
+    
+    
   return (
     <div className="accordionContainer">
-      <span className="title flex">
-        How do I choose the right destination for me?
+      <span className={(active === title ? "activeTitle" : "") + "title" + "flex"}>
+       {title}
         <span>
           <BsArrowDownCircleFill className="icon" />
         </span>
       </span> 
-      <p className="description">Consider your interests, budget desired experiences, and the type of environment you enjoy. Research destinations that align with your preferences and offer attractions or activities you find appealing.</p>
+      <p className={(active === title ? "show" : "")}>{desc}</p>
     </div>
   );
 };
