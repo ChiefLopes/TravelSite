@@ -38,12 +38,17 @@
     border-radius: 10px;
     justify-content: space-between;
     background-color: var(--primaryColorLight);
-    
+
     span {
-    cursor: pointer;
-    .icon {
-    
+      cursor: pointer;
+      .icon {
+        font-size: 1.2rem;
+        color: var(--blackColor);
+      }
     }
-    }
+  }
+
+  .description {
+    font-size: var(--smallFontSize);
   }
 }
