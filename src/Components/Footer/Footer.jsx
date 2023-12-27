@@ -25,22 +25,39 @@ const Footer = () => {
                       </span>
                       <li>
                           <a href="#">Home</a>
+                      </li>
+                      <li>
                           <a href="#">Explore</a>
+                      </li>
+                      <li>
                           <a href="#">Travel</a>
+                      </li>
+                      <li>
                           <a href="#">Blog</a>
                       </li>
                   </div>
                   
                   <div className="footerLinks">
-                      <span className="span linkTitle">
+                      <span className="linkTitle">
                           Helpful Links
                       </span>
                       <li>
                           <a href="#">Destination</a>
+                      </li>
+                      <li>
                           <a href="#">Support</a>
-                          <a href="#">Travel and condition</a>
+                      </li>
+                      <li>
+                          <a href="#">Travel and Condition</a>
+                      </li>
+                      <li>
                           <a href="#">Privacy</a>
                       </li>
+                  </div>
+                  <div className="footerLinks">
+                      <span className="linkTitle">Contact Details</span>
+                      <span className="phone">+234-990-224-567-0</span>
+                      <span className="email">chieflopesekede@gmail.com</span>
                   </div>
         </div>
       </div>
