@@ -5,13 +5,20 @@ const Accordion = ({ title, desc, active, setActive }) => {
   return (
     <div className="accordionContainer">
       <span
-        className={(active === title ? "activeTitle " :  "" ) + "flex " + "title "}>
+        className={
+          (active === title ? "activeTitle " : "") + "flex " + "title "
+        }>
         {title}
-        <span onClick={() => setActive(title)}>
-          <BsArrowDownCircle className="icon" />
+        <span>
+          <BsArrowDownCircle
+            className="icon"
+            onClick={() => setActive(title)}
+          />
         </span>
       </span>
-      <p className={(active === title ? "show " : "") + "description "}>{desc}</p>
+      <p className={(active === title ? "show " : "") + "description "}>
+        {desc}
+      </p>
     </div>
   );
 };

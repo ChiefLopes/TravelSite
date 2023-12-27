@@ -4,7 +4,7 @@ import "./Questions.scss";
 
 const Questions = () => {
   const [active, setActive] = useState(
-    "How do I choose the right travel destinations for me?"
+  ""
   );
 
   return (
@@ -13,7 +13,7 @@ const Questions = () => {
         <h3>Frequently Asked Questions</h3>
       </div>
 
-      <div className="sceContainer grid">
+      <div className="secContainer grid">
         <div className="accordion grid">
           <Accordion
             title="How do I choose the right travel destinations for me?"
@@ -25,8 +25,7 @@ const Questions = () => {
             title="What are the best times to visit specific destinations?"
             desc="Research the climate, weather patterns and peak tourist seasons of the destination you are interested in. Opt for the shoulder seasons when the weather is pleasant, and crowds are fewer if possible"
             active={active}
-            setActive={setActive}
-          />
+            setActive={setActive}/>
           <Accordion
             title="How can i find budget-friendly option travel options and deals?"
             desc="Look for travel deals, discounts on flights and accommodations, and consider using travel apps or websites that offer competitive prices. Being flexible with your travel dates can also help you find better deals."
