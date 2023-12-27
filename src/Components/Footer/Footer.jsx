@@ -1,3 +1,6 @@
+import "./Footer.scss"
+
+// Imported social icons
 import { BiLogoMediumOld } from "react-icons/bi";
 import { ImFacebook2 } from "react-icons/im";
 import { FaTwitter } from "react-icons/fa";
@@ -16,7 +19,7 @@ const Footer = () => {
           <div className="socials ">
             <ImFacebook2 className="icon" />
             <FaTwitter className="icon" />
-            <FaInstagramSquare className="icon" />
+            <FaInstagramSquare className="icon" fill="red  "/>
                   </div>
                   
                   <div className="footerLinks">
