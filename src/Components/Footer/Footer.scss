@@ -42,6 +42,16 @@
     .logoDiv {
       .footerLogo {
         display: flex;
+        color: var(--blackColor);
+        font-weight: 500;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: .5rem;
+        
+        .icon {
+          font-size: 35px;
+        }
       }
     }
   }

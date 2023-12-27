@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="socials ">
             <ImFacebook2 className="icon" />
             <FaTwitter className="icon" />
-            <FaInstagramSquare className="icon" fill="red  "/>
+            <FaInstagramSquare className="icon" />
                   </div>
                   
                   <div className="footerLinks">
