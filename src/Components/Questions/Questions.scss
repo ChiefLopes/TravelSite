@@ -40,10 +40,11 @@
     background-color: var(--primaryColorLight);
 
     span {
-      .icon {
         cursor: pointer;
+      .icon {
         font-size: 1.2rem;
         color: var(--blackColor);
+        
       }
     }
   }
