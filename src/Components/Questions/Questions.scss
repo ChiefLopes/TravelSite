@@ -40,11 +40,10 @@
     background-color: var(--primaryColorLight);
 
     span {
-        cursor: pointer;
+      cursor: pointer;
       .icon {
         font-size: 1.2rem;
         color: var(--blackColor);
-        
       }
     }
   }
@@ -72,5 +71,47 @@
   .activeTitle {
     background: var(--primaryColorLight);
     border-radius: 10px 10px 0 0;
+  }
+}
+
+.questions {
+  .secHeading {
+    h3,
+    h4 {
+      padding-bottom: 1.5rem;
+    }
+    p {
+      font-size: var(--smallestFontSize);
+      color: var(--blackColor);
+      padding-bottom: 1rem;
+    }
+  }
+
+  .form {
+    .formContent {
+      gap: 1rem;
+
+      input,
+      textarea {
+        font-size: 12px;
+        font-weight: 500;
+        background: var(--cardColor);
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: var(--borderRadius);
+        outline: none;
+        transition: all 0.5s ease-in-out;
+
+        &:focus {
+          background: var(--primaryColorLight);
+        }
+      }
+      
+      textarea {
+       height: 100px;
+       border-radius: 10px;
+    }
+    }
   }
 }
