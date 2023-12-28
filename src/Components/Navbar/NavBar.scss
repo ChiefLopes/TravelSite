@@ -125,6 +125,31 @@
       ul {
         display: flex;
         gap: 1rem;
+
+        li {
+          font-size: var(--h3FontSize);
+          font-weight: 500;
+          padding: 1rem 0;
+          text-align: center;
+          cursor: pointer;
+
+          &:hover {
+            color: var(--primaryColor);
+            border-bottom: 2.5px solid var(--primaryColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .navBar {
+    padding: 2rem 6rem;
+
+    .menu {
+      ul {
+        gap: 4rem;
       }
     }
   }
