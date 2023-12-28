@@ -58,16 +58,32 @@
 
       .socials {
         display: flex;
-        gap: .5rem;
+        gap: 0.5rem;
+        align-items: center;
         margin: auto;
         justify-content: center;
-        
+
         .icon {
-           font-size: 25px;
-           background: var(--pr);
-           border-radius: 50%;
-           padding: 8px;
+          font-size: 35px;
+          background: var(--primaryColor);
+          border-radius: 50%;
+          padding: 8px;
+          color: var(--whiteColor);
+
+          &:hover {
+            background-color: var(--primaryColorLight);
+          }
         }
+      }
+    }
+
+    .footerLinks {
+      display: grid;
+      row-gap: 0.2rem;
+
+      .linkTitle {
+        padding-bottom: 0.5rem;
+        font-weight: 700;
       }
     }
   }
