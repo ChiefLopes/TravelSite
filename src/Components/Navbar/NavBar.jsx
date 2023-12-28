@@ -26,7 +26,7 @@ const NavBar = () => {
         <BiLogoMediumOld className="icon" />
         <span>Suc-cess Trips</span>
 
-        <div className={navBar }>
+        <div className={navBar}>
           <ul>
             <li className="navList">Destination</li>
             <li className="navList">Testimonial</li>

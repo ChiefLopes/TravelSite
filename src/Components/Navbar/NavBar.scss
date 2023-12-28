@@ -32,13 +32,13 @@
 
 .navBar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
   border-bottom: 1.5px solid whitesmoke;
-  //   background: #daa3a3;
+  background: rgba(255, 255, 255, 0.737);
   backdrop-filter: blur(5px);
   z-index: 1000;
 
@@ -84,7 +84,8 @@
     }
   }
 
-  .menuIcon, .closeIcon {
+  .menuIcon,
+  .closeIcon {
     font-size: var(--h1FontSize);
 
     &:hover {
@@ -103,5 +104,20 @@
 
   .showNavbar {
     top: 8rem;
+  }
+}
+
+// Media Queries
+@media screen and (min-width: 768px) {
+  .navBar {
+    .logoDiv {
+      span {
+        font-size: var(--h2FontSize);
+      }
+    }
+    
+    .closeIcon, .menuIcon {
+       display: none;
+    }
   }
 }
