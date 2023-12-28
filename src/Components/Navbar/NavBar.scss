@@ -115,9 +115,17 @@
         font-size: var(--h2FontSize);
       }
     }
-    
-    .closeIcon, .menuIcon {
-       display: none;
+
+    .closeIcon,
+    .menuIcon {
+      display: none;
+    }
+
+    .menu {
+      ul {
+        display: flex;
+        gap: 1rem;
+      }
     }
   }
 }
