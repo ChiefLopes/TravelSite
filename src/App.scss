@@ -114,32 +114,43 @@ video {
 }
 
 .btn:hover {
-   color: var(--primaryColor);
-   background-color: var(--primaryColorLight );
+  color: var(--primaryColor);
+  background-color: var(--primaryColorLight);
 }
 
 .section {
-    padding : 4rem 0 2rem;
+  padding: 4rem 0 2rem;
 }
 
 .container {
-   padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 ::selection {
-    background-color: var(--primaryColorLight);
-    color: var(--primaryColor);
+  background-color: var(--primaryColorLight);
+  color: var(--primaryColor);
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    background-color: var(--primaryColorLight);
+  width: 10px;
+  background-color: var(--primaryColorLight);
 }
 
 ::-webkit-scrollbar-thumb {
-    width : 10px;
-    background-color: var(--primaryColor);
-    border-radius: var(--borderRadius );
+  width: 10px;
+  background-color: var(--primaryColor);
+  border-radius: var(--borderRadius);
 }
 
 // Media Queries
+
+@media screen and (min-width: 840px) {
+  .section {
+    padding: 4rem 0 3rem;
+  }
+  
+  .container {
+   width: 75%;
+   margin: auto;
+}
+}
