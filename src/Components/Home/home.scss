@@ -51,8 +51,8 @@
   .sectionText {
     position: absolute;
     height: 100%;
-    top: 30%;
-    bottom: 50%;
+    top: 25%;
+    bottom: 40%;
     color: var(--whiteColor);
     padding: 0 1.3rem;
 
@@ -143,10 +143,17 @@
   .Home {
     position: relative;
 
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      max-width: 70%;
+      margin: auto;
+    }
+
     .popularPlaces {
       display: block;
       position: absolute;
-      bottom: 10%;
+      bottom: 3%;
       width: 100%;
       display: flex;
       align-items: center;
