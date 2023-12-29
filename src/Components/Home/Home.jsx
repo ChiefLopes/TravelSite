@@ -5,6 +5,11 @@ import { AiOutlineSwapRight } from "react-icons/ai";
 
 // Imported Assets 
 import VideoBg from "../../Asset/Baloons.mp4"
+import photo1 from "../../Asset/photo1.jpg";
+import photo2 from "../../Asset/photo2.jpg";
+import photo3 from "../../Asset/Photo3.jpg";
+import photo4 from "../../Asset/photo4.jpg";
+
 
 const Home = () => {
   return (
@@ -29,10 +34,11 @@ const Home = () => {
                   <h3>Popular Places</h3>
                   
                   <div className="image flex">
-                      {/* <img src="" alt=""/>
-                      <img src="" alt=""/>
-                      <img src="" alt=""/>
-                      <img src="" alt=""/> */}
+                      <img src={photo1} alt="Destination images"/>
+                      <img src={photo2} alt="Destination images"/>
+                      <img src={photo3} alt="Destination images"/>
+                      <img src={photo4} alt="Destination images"/>
+                     
                   </div>
               </div>
           </div>
