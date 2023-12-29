@@ -139,17 +139,34 @@
   }
 }
 
-
-
 @media screen and (min-width: 1040px) {
-   .Home {
+  .Home {
     position: relative;
-    
+
     .popularPlaces {
-       display: block;
-       position: absolute;
-       bottom: 10%;
-       width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-}
+
+    h3 {
+      color: var(--whiteColor);
+      padding: 1rem 0;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 83%;
+        height: 2px;
+        background: rgb(202, 202, 202);
+        right: 0;
+        bottom: 50%;
+        position: absolute;
+      }
+    }
+  }
 }
