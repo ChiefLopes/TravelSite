@@ -160,3 +160,17 @@
     }
   }
 }
+
+@media screen and (min-width: 740px) {
+      .destinationContainer {
+         grid-template-columns: repeat(2, 1fr);
+    }
+    
+  .destination {
+    .secContainer {
+      .searchField {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
