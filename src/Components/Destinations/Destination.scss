@@ -186,8 +186,6 @@
         h3 {
           font-size: 1.9rem;
         }
-
-    
       }
 
       .secMenu {
@@ -232,57 +230,126 @@
 }
 
 @media screen and (min-width: 1014px) {
+    
+  .destinationContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .destination {
     .secContainer {
-      .secTitle {
-        .redText {
-          font-size: var(--normalFontSize);
-        }
+           .searchField {
+        grid-template-columns: repeat(4, 1fr);
+      }
+        
+    //   .secTitle {
+    //     .redText {
+    //       font-size: var(--normalFontSize);
+    //     }
 
-        h3 {
-          font-size: 1.9rem;
-        }
+    //     h3 {
+    //       font-size: 1.9rem;
+    //     }
+    //   }
 
+    //   .secMenu {
+    //     display: block;
+
+    //     .flex {
+    //       width: 100%;
+    //       margin: 2rem auto;
+    //       justify-content: left;
+    //       gap: 1rem;
+
+    //       li {
+    //         background: transparent;
+    //         padding: 10px 17px;
+    //         border-radius: var(--borderRadius);
+    //         color: var(--blackColor);
+    //         border: 1.5px dashed transparent;
+    //         cursor: pointer;
+
+    //         &:hover {
+    //           color: var(--primaryColor);
+    //           border: 1.5px dashed var(--primaryColor);
+
+    //           &:active {
+    //             background: var(--primaryColorLight);
+    //           }
+    //         }
+    //       }
+
+    //       .active {
+    //         color: var(--primaryColor);
+    //         border: 1.5px dashed var(--primaryColor);
+
+    //         &:hover {
+    //           background: var(--primaryColorLight);
+    //         }
+    //       }
+    //     }
+    //   }
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
     
+  .destinationContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .destination {
+    .secContainer {
+           .searchField {
+        grid-template-columns: repeat(4, 1fr);
       }
+        
+    //   .secTitle {
+    //     .redText {
+    //       font-size: var(--normalFontSize);
+    //     }
 
-      .secMenu {
-        display: block;
+    //     h3 {
+    //       font-size: 1.9rem;
+    //     }
+    //   }
 
-        .flex {
-          width: 100%;
-          margin: 2rem auto;
-          justify-content: left;
-          gap: 1rem;
+    //   .secMenu {
+    //     display: block;
 
-          li {
-            background: transparent;
-            padding: 10px 17px;
-            border-radius: var(--borderRadius);
-            color: var(--blackColor);
-            border: 1.5px dashed transparent;
-            cursor: pointer;
+    //     .flex {
+    //       width: 100%;
+    //       margin: 2rem auto;
+    //       justify-content: left;
+    //       gap: 1rem;
 
-            &:hover {
-              color: var(--primaryColor);
-              border: 1.5px dashed var(--primaryColor);
+    //       li {
+    //         background: transparent;
+    //         padding: 10px 17px;
+    //         border-radius: var(--borderRadius);
+    //         color: var(--blackColor);
+    //         border: 1.5px dashed transparent;
+    //         cursor: pointer;
 
-              &:active {
-                background: var(--primaryColorLight);
-              }
-            }
-          }
+    //         &:hover {
+    //           color: var(--primaryColor);
+    //           border: 1.5px dashed var(--primaryColor);
 
-          .active {
-            color: var(--primaryColor);
-            border: 1.5px dashed var(--primaryColor);
+    //           &:active {
+    //             background: var(--primaryColorLight);
+    //           }
+    //         }
+    //       }
 
-            &:hover {
-              background: var(--primaryColorLight);
-            }
-          }
-        }
-      }
+    //       .active {
+    //         color: var(--primaryColor);
+    //         border: 1.5px dashed var(--primaryColor);
+
+    //         &:hover {
+    //           background: var(--primaryColorLight);
+    //         }
+    //       }
+    //     }
+    //   }
     }
   }
 }
