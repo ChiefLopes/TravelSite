@@ -72,8 +72,10 @@
         }
 
         .grid {
+          grid-template-columns: 2, 1fr;
+
           .singlePortfolio {
-            gap: 1.5rem;
+            gap: 1rem;
 
             .iconDiv {
               img {
@@ -125,24 +127,18 @@
                 width: 60px;
               }
             }
-
-            .infor {
-              h4 {
-                padding-bottom: 0.5rem;
-                font-size: var(--normalFontSize);
-              }
-
-              p {
-                font-size: var(--normalFontSize);
-              }
-            }
           }
+        }
+      }
+
+      .rightContent {
+        img {
+          margin: auto;
         }
       }
     }
   }
 }
-
 
 //   .rightContent {
 //     margin: auto;
