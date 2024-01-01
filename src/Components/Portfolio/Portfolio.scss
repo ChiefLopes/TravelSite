@@ -76,6 +76,12 @@
 
           .singlePortfolio {
             gap: 1.5rem;
+
+            .iconDiv {
+              img {
+                
+              }
+            }
           }
         }
       }
@@ -87,10 +93,9 @@
         justify-content: center;
         img {
           border-radius: 10px;
-          border: 0.2rem solid red;
           margin: auto;
           max-width: 80%;
-         }
+        }
       }
     }
   }
