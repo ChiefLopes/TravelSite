@@ -79,24 +79,32 @@
 
             .iconDiv {
               img {
-                
+                height: 60px;
+                width: 60px;
+              }
+            }
+
+            .infor {
+              h4 {
+                padding-bottom: 0.5rem;
+                font-size: var(--normalFontSize);
               }
             }
           }
         }
       }
 
-      .rightContent {
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-          border-radius: 10px;
-          margin: auto;
-          max-width: 80%;
-        }
-      }
+      //   .rightContent {
+      //     margin: auto;
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: center;
+      //     img {
+      //       border-radius: 10px;
+      //       margin: auto;
+      //       max-width: 80%;
+      //     }
+      //   }
     }
   }
 }
