@@ -159,8 +159,12 @@
             }
 
             p {
-              font-size: var(--h3FontSize)`;
+              font-size: var(--h3FontSize);
             }
+          }
+
+          grid {
+            grid-template-columns: repeat(1, 1fr);
           }
         }
       }
