@@ -53,7 +53,7 @@ const Portfolio = () => {
               <div className="infor">
                 <h4>24/7 Customer Support</h4>
                 <p>
-                 Our top priority is the safety and well-being of our clients. We maintainn higt and safety
+                 Our top priority is the safety and well-being of our clients. We maintain high and safety 
                 </p>
               </div>
             </div>
@@ -68,3 +68,6 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
+
