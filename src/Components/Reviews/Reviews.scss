@@ -189,8 +189,9 @@
 
         .clientsImages {
           img {
-            height: 50px;
-            width: 50px;
+            // margin-top: 20px;
+            height: 70px;
+            width: 70px;
           }
         }
       }
@@ -213,6 +214,10 @@
           color: var(--blackColor);
           line-height: 2rem;
         }
+      }
+
+      .imgDiv {
+        height: 300px;
       }
     }
   }
