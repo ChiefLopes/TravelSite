@@ -116,7 +116,7 @@
     .secContainer {
       .textDiv {
         .redText {
-          font-size: var(--biggestFontSize);
+          font-size: 2rem;
         }
 
         h3 {
@@ -158,14 +158,14 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 740px) {
   .review {
     .secContainer {
       grid-template-columns: repeat(2, 1fr);
 
       .textDiv {
         .redText {
-          // font-size: var(--normalFontSize);
+          font-size: var(--normalFontSize);
         }
 
         h3 {
