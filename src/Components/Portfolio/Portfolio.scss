@@ -198,7 +198,7 @@
 @media screen and (min-width: 1240px) {
   .portfolio {
     .secContainer {
-      gap: 3 rem;
+      gap: 5rem;
       .leftContent {
         .secHeading {
           h3 {
@@ -212,9 +212,10 @@
 
         .grid {
           gap: 2.5rem;
+          margin-top: 3rem;
 
           .singlePortfolio {
-            gap: 1.5rem;
+            gap: 2rem;
 
             .iconDiv {
               img {
@@ -235,7 +236,9 @@
         img {
           border-radius: 10px;
           margin: auto;
-          max-width: 80%;
+          max-width: 100%;
+          margin-left: 12.5rem;
+        //   border: 3px solid red;
         }
       }
     }
