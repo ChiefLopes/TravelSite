@@ -120,6 +120,12 @@
   .accordionContainer {
     .title {
       font-size: var(--h3FontSize);
+
+      span {
+        .icon {
+          font-size: 1.7rem;
+        }
+      }
     }
   }
 }
