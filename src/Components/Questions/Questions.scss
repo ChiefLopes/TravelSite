@@ -107,11 +107,19 @@
           background: var(--primaryColorLight);
         }
       }
-      
+
       textarea {
-       height: 100px;
-       border-radius: 10px;
+        height: 100px;
+        border-radius: 10px;
+      }
     }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .accordionContainer {
+    .title {
+      font-size: var(--h3FontSize);
     }
   }
 }
