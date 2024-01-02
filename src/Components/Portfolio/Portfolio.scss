@@ -84,7 +84,7 @@
               }
             }
 
-            .infor {
+            .info {
               h4 {
                 padding-bottom: 0.5rem;
                 font-size: var(--normalFontSize);
@@ -104,6 +104,7 @@
 @media screen and (min-width: 660px) {
   .portfolio {
     .secContainer {
+      grid-template-columns: repeat(2, 1fr);
       .leftContent {
         .secHeading {
           h3 {
@@ -116,7 +117,7 @@
         }
 
         .grid {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(1, 1fr);
 
           .singlePortfolio {
             gap: 1.5rem;
@@ -140,32 +141,56 @@
         img {
           border-radius: 10px;
           margin: auto;
-          //   max-width: 80%;
+          max-width: 80%;
+          border: 2px solid red;
         }
       }
     }
   }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 660px) {
   .portfolio {
     .secContainer {
-      grid-template-columns: 2, 1fr;
-      .secContainer {
-        .leftContent {
-          .secHeading {
-            h3 {
-              font-size: var(--h2FontSize);
-            }
-
-            p {
-              font-size: var(--h3FontSize);
-            }
+      grid-template-columns: repeat(2, 1fr);
+      .leftContent {
+        .secHeading {
+          h3 {
+            font-size: 2rem;
           }
 
-          grid {
-            grid-template-columns: repeat(1, 1fr);
+          p {
+            font-size: var(--h3FontSize);
           }
+        }
+
+        .grid {
+          grid-template-columns: repeat(1, 1fr);
+
+          .singlePortfolio {
+            gap: 1.5rem;
+
+            .iconDiv {
+              img {
+                height: 60px;
+                width: 60px;
+              }
+            }
+          }
+        }
+      }
+
+      .rightContent {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80;
+        img {
+          border-radius: 10px;
+          margin: auto;
+          max-width: 100%;
+
         }
       }
     }

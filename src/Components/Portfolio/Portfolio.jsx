@@ -1,7 +1,7 @@
 import safetyIcon from "../../Asset/icons/safety.svg";
 import destIcon from "../../Asset/icons/destination.svg";
 import Support from "../../Asset/icons/customerSupport.svg";
-import manAtBeach from "../../Asset/manAtBeach.jpg"
+import manSun from "../../Asset/manSun.jpeg"
 import "./Portfolio.scss"
 
 const Portfolio = () => {
@@ -12,7 +12,7 @@ const Portfolio = () => {
           <div className="secHeading">
             <h3>Why You should Choose Us?</h3>
             <p>
-              We have extensive knowlede and experience in the travel industry
+              We have extensive knowledge and experience in the travel industry
             </p>
           </div>
 
@@ -22,7 +22,7 @@ const Portfolio = () => {
                 <img src={safetyIcon} alt="" />
               </div>
 
-              <div className="infor">
+              <div className="info">
                 <h4>Safety and Support</h4>
                 <p>
                   Our top priority is the safety and well-being of our clients.
@@ -36,7 +36,7 @@ const Portfolio = () => {
                 <img src={destIcon} alt="" />
               </div>
 
-              <div className="infor">
+              <div className="info">
                 <h4>Diverse Range of Destinations</h4>
                 <p>
                   Wether it&apos;s a domestic tour or an international
@@ -50,7 +50,7 @@ const Portfolio = () => {
                 <img src={Support} alt="" />
               </div>
 
-              <div className="infor">
+              <div className="info">
                 <h4>24/7 Customer Support</h4>
                 <p>
                  Our top priority is the safety and well-being of our clients. We maintain high and safety 
@@ -60,7 +60,7 @@ const Portfolio = () => {
           </div>
               </div>
               <div className="rightContent">
-                  <img src={manAtBeach} alt="man at a beach" className="manAtBeach"/>
+                  <img src={manSun} alt="man standing" className="manSun"/>
               </div>
       </div>
     </div>
