@@ -142,7 +142,6 @@
           border-radius: 10px;
           margin: auto;
           max-width: 80%;
-        //   border: 2px solid red;
         }
       }
     }
@@ -190,6 +189,53 @@
           border-radius: 10px;
           max-width: 100%;
           height: 30rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .portfolio {
+    .secContainer {
+      gap: 3 rem;
+      .leftContent {
+        .secHeading {
+          h3 {
+            font-size: 2rem;
+          }
+
+          p {
+            font-size: var(--h3FontSize);
+          }
+        }
+
+        .grid {
+          gap: 2.5rem;
+
+          .singlePortfolio {
+            gap: 1.5rem;
+
+            .iconDiv {
+              img {
+                height: 60px;
+                width: 60px;
+              }
+            }
+          }
+        }
+      }
+
+      .rightContent {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80;
+        img {
+          border-radius: 10px;
+          margin: auto;
+          max-width: 80%;
         }
       }
     }
