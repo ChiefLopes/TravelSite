@@ -33,6 +33,9 @@
 .review {
   .secContainer {
     .textDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
       .redText {
         font-size: var(--smallestFontSize);
         display: block;
@@ -132,12 +135,41 @@
             font-size: var(--h2FontSize);
           }
         }
-        
+
         .clientsImages {
-           img {
+          img {
             height: 50px;
             width: 50px;
+          }
         }
+      }
+
+      .imgDiv {
+        height: 250px;
+        width: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+          //   border: 3px solid red;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .review {
+    .secContainer {
+      grid-template-columns: repeat(2, 1fr);
+
+      .textDiv {
+        .redText {
+          // font-size: var(--normalFontSize);
+        }
+
+        h3 {
+          font-size: 20px;
         }
       }
     }
