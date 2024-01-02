@@ -84,6 +84,30 @@
 }
 
 // Media Queries
+
+@media screen and (max-width: 480px) {
+  .review {
+    .secContainer {
+      .textDiv {
+        .redText {
+          font-size: var(--biggestFontSize);
+        }
+
+        h3 {
+          color: var(--blackColor);
+          margin-left: -14px;
+          font-size: 20px;
+        }
+
+        p {
+          font-size: var(--normalFontSize);
+          color: var(--blackColor);
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 480px) {
   .review {
     .secContainer {
@@ -96,6 +120,24 @@
           color: var(--blackColor);
           margin-left: -14px;
           font-size: 20px;
+        }
+
+        p {
+          font-size: 13px;
+          color: var(--blackColor);
+        }
+
+        .stars {
+          .icon {
+            font-size: var(--h2FontSize);
+          }
+        }
+        
+        .clientsImages {
+           img {
+            height: 50px;
+            width: 50px;
+        }
         }
       }
     }
