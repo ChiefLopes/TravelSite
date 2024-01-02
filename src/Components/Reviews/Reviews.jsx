@@ -20,7 +20,7 @@ const Reviews = () => {
           <span className="redText">FROM OUR CLIENTS</span>
           <h3>Real Travel History From Our Beloved Clients</h3>
           <p>
-            by choosing us as their tour agency, customers can expect an
+            By choosing us as their tour agency, customers can expect an
             enriching an enriching and enjoyable travel experience, filled with
             unforgettable memories that will last a lifetime.
           </p>
