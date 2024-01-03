@@ -48,3 +48,15 @@ root {
     }
   }
 }
+
+// Media Queries 
+
+@media screen and (min-width: 480px) {
+    .subscribe {
+        .secContainer {
+        img {
+          max-width: 75%;
+        }
+        }
+    }
+}
