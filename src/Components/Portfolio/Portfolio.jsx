@@ -19,7 +19,7 @@ const Portfolio = () => {
           <div className="grid">
             <div className="singlePortfolio flex">
               <div className="iconDiv">
-                <img src={safetyIcon} alt="" />
+                <img src={safetyIcon} alt="safety icon" />
               </div>
 
               <div className="info">
