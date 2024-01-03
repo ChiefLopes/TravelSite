@@ -1,10 +1,20 @@
 import safetyIcon from "../../Asset/icons/safety.svg";
 import destIcon from "../../Asset/icons/destination.svg";
 import Support from "../../Asset/icons/customerSupport.svg";
-import manSun from "../../Asset/manSun.jpeg"
-import "./Portfolio.scss"
+import manSun from "../../Asset/manSun.jpeg";
+import "./Portfolio.scss";
+
+import { useEffect } from "react";
+
+// Imported Library for scroll animation
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
+
   return (
     <div className="portfolio section container">
       <div className="secContainer grid">
@@ -53,21 +63,19 @@ const Portfolio = () => {
               <div className="info">
                 <h4>24/7 Customer Support</h4>
                 <p>
-                 Our top priority is the safety and well-being of our clients. We maintain high and safety 
+                  Our top priority is the safety and well-being of our clients.
+                  We maintain high and safety
                 </p>
               </div>
             </div>
           </div>
-              </div>
-              <div className="rightContent">
-                  <img src={manSun} alt="man standing" className="manSun"/>
-              </div>
+        </div>
+        <div className="rightContent">
+          <img src={manSun} alt="man standing" className="manSun" />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Portfolio;
-
-
-

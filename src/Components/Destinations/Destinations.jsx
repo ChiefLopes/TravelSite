@@ -150,7 +150,7 @@ const Destinations = () => {
                         <TiLocation /> {destination.location}
                       </p>
                     </div>
-                    <span className="rating">{destination.rating}</span>
+                    <span className="rating" data-aos="fade-up">{destination.rating}</span>
                   </div>
                 </div>
               </div>
