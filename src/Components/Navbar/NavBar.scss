@@ -54,7 +54,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .menu {
       position: absolute;
       width: 70%;
@@ -70,7 +70,6 @@
       box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
     }
 
-    
     li {
       font-size: var(--h3FontSize);
       font-weight: 500;

@@ -8,7 +8,7 @@ import Questions from "./Components/Questions/Questions";
 import Reviews from "./Components/Reviews/Reviews";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Footer from "./Components/Footer/Footer";
-import Scroll from "./Components/Layout/Scroll";
+import Scroll from "./Layout/Scroll";
 
 function App() {
   return (

@@ -18,7 +18,7 @@ const NavBar = () => {
     setNavBar("menu");
   };
 
-  return (
+  return ( 
     <div className="navBar">
       <div className="logoDiv">
         <BiLogoMediumOld className="icon" />
