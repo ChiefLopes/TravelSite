@@ -148,13 +148,24 @@
         font-size: var(--normalFontSize);
       }
     }
-    
-    
+
     .secContainer {
-       grid-template-columns: repeat(2, 1fr);
-       align-items: flex-start;
-       gap: 2rem;
-       
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-start;
+      gap: 2rem;
+
+      .form {
+        .formContent {
+          input,
+          textarea {
+            font-size: var(--normalFontSize);
+            ::placeholder {
+              font-size: var(--normalFontSize);
+              color: var(--blackColor);
+            }
+          }
+        }
+      }
     }
   }
 }
