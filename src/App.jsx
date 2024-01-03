@@ -8,19 +8,22 @@ import Questions from "./Components/Questions/Questions";
 import Reviews from "./Components/Reviews/Reviews";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Footer from "./Components/Footer/Footer";
+import Scroll from "./Components/Layout/Scroll";
 
 function App() {
   return (
-      <>
-      <NavBar />
-      <Home />
-      <Middle />
-      <Destinations />
-      <Portfolio />
-      <Reviews />
-      <Questions />
-      <Subscribe />
-      <Footer />
+    <>
+      <Scroll>
+        <NavBar />
+        <Home />
+        <Middle />
+        <Destinations />
+        <Portfolio />
+        <Reviews />
+        <Questions />
+        <Subscribe />
+        <Footer />
+      </Scroll>
     </>
   );
 }

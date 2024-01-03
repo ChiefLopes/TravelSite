@@ -1,5 +1,5 @@
 import "./home.scss";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 // Imported Icons
 import { AiOutlineSwapRight } from "react-icons/ai";
 
@@ -11,15 +11,15 @@ import photo3 from "../../Asset/Photo3.jpg";
 import photo4 from "../../Asset/photo4.jpg";
 
 // Imported Library for scroll animation
-import Aos from "aos";
-import "aos/dist/aos.css";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 
 const Home = () => {
     
      
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+//   useEffect(() => {
+//     Aos.init({ duration: 2000 });
+//   }, []);
 
   return (
     <div className="Home">
