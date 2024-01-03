@@ -40,7 +40,7 @@ const Home = () => {
 
       <div className="popularPlaces">
         <div className="content">
-          <h3>Popular Places</h3>
+          <h3 data-aos="flip-left">Popular Places</h3>
 
           <div className="image flex" data-aos="fade-up">
             <img src={photo1} alt="Destination images" />
