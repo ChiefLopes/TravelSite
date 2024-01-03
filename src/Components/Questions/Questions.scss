@@ -174,3 +174,17 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .accordionContainer {
+    .title {
+      font-size: var(--h3FontSize);
+
+      h3 {
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
