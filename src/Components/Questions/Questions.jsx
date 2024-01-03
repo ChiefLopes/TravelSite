@@ -2,9 +2,19 @@ import { useState } from "react";
 import Accordion from "./Accordion";
 import "./Questions.scss";
 
+import { useEffect } from "react";
+
+// Imported Library for scroll animation
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Questions = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
+
   const [active, setActive] = useState(
-  ""
+    "How do I choose the right destination for me?"
   );
 
   return (
@@ -14,7 +24,7 @@ const Questions = () => {
       </div>
 
       <div className="secContainer grid">
-        <div className="accordion grid">
+        <div className="accordion grid" data-aos="flip-up">
           <Accordion
             title="How do I choose the right travel destinations for me?"
             desc="Consider your interests, budget desired experiences, and the type of environment you enjoy. Research destinations that align with your preferences and offer attractions or activities you find appealing."
@@ -25,7 +35,8 @@ const Questions = () => {
             title="What are the best times to visit specific destinations?"
             desc="Research the climate, weather patterns and peak tourist seasons of the destination you are interested in. Opt for the shoulder seasons when the weather is pleasant, and crowds are fewer if possible"
             active={active}
-            setActive={setActive}/>
+            setActive={setActive}
+          />
           <Accordion
             title="How can i find budget-friendly option travel options and deals?"
             desc="Look for travel deals, discounts on flights and accommodations, and consider using travel apps or websites that offer competitive prices. Being flexible with your travel dates can also help you find better deals."
@@ -40,7 +51,7 @@ const Questions = () => {
           />
         </div>
 
-        <div className="form">
+        <div className="form" data-aos="flip-down">
           <div className="secHeading">
             <h4>Do You Have any specific questions?</h4>
             <p>
