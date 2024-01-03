@@ -107,5 +107,13 @@
 }
 
 
-// Media Queries 
+// Media Queries ==========================
+
+@media screen and (min-width: 448px) {
+     .footer{
+    .secContainer {
+       grid-template-columns: repeat(4,1fr );
+    }
+    }
+}
 
