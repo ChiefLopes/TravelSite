@@ -1,17 +1,26 @@
-import "./home.scss"
-
+import "./home.scss";
+import { useEffect } from "react";
 // Imported Icons
 import { AiOutlineSwapRight } from "react-icons/ai";
 
-// Imported Assets 
-import VideoBg from "../../Asset/Baloons.mp4"
+// Imported Assets
+import VideoBg from "../../Asset/Baloons.mp4";
 import photo1 from "../../Asset/photo1.jpg";
 import photo2 from "../../Asset/photo2.jpg";
 import photo3 from "../../Asset/Photo3.jpg";
 import photo4 from "../../Asset/photo4.jpg";
 
+// Imported Library for scroll animation
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+    
+     
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
+
   return (
     <div className="Home">
       <div className="videoBg">
@@ -19,31 +28,30 @@ const Home = () => {
       </div>
 
       <div className="sectionText">
-        <h1>Unlock Your Travel Dreams With Us!</h1>
-        <p>
+        <h1 data-aos="fade-down">Unlock Your Travel Dreams With Us!</h1>
+        <p data-aos="fade-right">
           Discover the World&apos; most adventurous nature, Life is so short for
           a trip
         </p>
-        <button className="btn flex">
+        <button className="btn flex" data-aos="fade-left">
           GET STARTED <AiOutlineSwapRight />
         </button>
+      </div>
+
+      <div className="popularPlaces">
+        <div className="content">
+          <h3>Popular Places</h3>
+
+          <div className="image flex" data-aos="fade-up">
+            <img src={photo1} alt="Destination images" />
+            <img src={photo2} alt="Destination images" />
+            <img src={photo3} alt="Destination images" />
+            <img src={photo4} alt="Destination images" />
           </div>
-          
-          <div className="popularPlaces">
-              <div className="content">
-                  <h3>Popular Places</h3>
-                  
-                  <div className="image flex">
-                      <img src={photo1} alt="Destination images"/>
-                      <img src={photo2} alt="Destination images"/>
-                      <img src={photo3} alt="Destination images"/>
-                      <img src={photo4} alt="Destination images"/>
-                     
-                  </div>
-              </div>
-          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
