@@ -1,4 +1,9 @@
 import "./Destination.scss";
+import { useEffect } from "react";
+
+// Imported Library for scroll animation
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // Imported Icons
 import { MdLocationPin } from "react-icons/md";
@@ -78,10 +83,16 @@ const destinationData = [
 ];
 
 const Destinations = () => {
+    
+    // 
+      useEffect(() => {
+        Aos.init({ duration: 2000 });
+      }, []);
+    
   return (
     <div className="destination section container">
       <div className="secContainer">
-        <div className="secTitle">
+        <div className="secTitle" data-aos="fade-up">
           <span className="redText">EXPLORE NOW</span>
           <h3>Find Your Dream Destination</h3>
           <p>
@@ -90,7 +101,7 @@ const Destinations = () => {
           </p>
         </div>
 
-        <div className="searchField grid">
+        <div className="searchField grid" data-aos="fade-down">
           <div className="inputField flex">
             <MdLocationPin className="icon" />
             <input type="text" placeholder="Location" />
@@ -111,7 +122,10 @@ const Destinations = () => {
           </button>
         </div>
 
-        <div className="secMenu">
+        <div
+          className="secMenu"
+          data-aos="flip-left"
+        >
           <ul className="flex">
             <li className="active">All</li>
             <li>Recommended</li>
@@ -126,11 +140,11 @@ const Destinations = () => {
           {destinationData.map((destination) => {
             return (
               <div key={destination.id} className="singleDestination">
-                <div className="imgDiv">
+                <div className="imgDiv" data-aos="fade-up">
                   <img src={destination.img} alt="Destination image" />
 
-                  <div className="descInfo flex">
-                    <div className="text">
+                  <div className="descInfo flex"> 
+                    <div className="text" data-aos="fade-down">
                       <span className="name">{destination.name}</span>
                       <p className="flex">
                         <TiLocation /> {destination.location}
