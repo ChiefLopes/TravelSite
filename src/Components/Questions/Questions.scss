@@ -142,6 +142,12 @@
       h3,
       h4 {
         font-size: var(--h2FontSize);
+        color: red;
+      }
+
+      p {
+        font-size: var(--normalFontSize);
+        color: red;
       }
     }
   }
