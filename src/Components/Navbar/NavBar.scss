@@ -32,9 +32,9 @@
 
 .navBar {
   display: flex;
-  justify-content: space-between;
+  //   justify-content: space-between;
   align-items: center;
-//   width: 100%;
+  width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
   border-bottom: 1.5px solid whitesmoke;
@@ -51,6 +51,10 @@
       color: var(--blackColor);
       font-size: var(--h3FontSize);
       justify-content: center;
+    }
+
+    ul {
+        margin: 0 15rem;
     }
   }
 
