@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+//   width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
   border-bottom: 1.5px solid whitesmoke;
@@ -57,7 +57,7 @@
   @media screen and (max-width: 767px) {
     .menu {
       position: absolute;
-    //   width: 70%;
+      //   width: 70%;
       top: -100rem;
       right: 50%;
       left: 50%;
@@ -156,11 +156,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .navBar {
+  .navBar {
     padding: 2rem 14rem;
-    }
+  }
 }
 
 // @media screen and (min-width: ){
-    
+
 // }
