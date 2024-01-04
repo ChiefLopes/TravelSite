@@ -52,16 +52,12 @@
       font-size: var(--h3FontSize);
       justify-content: center;
     }
-
-    ul {
-        margin: 0 15.6rem;
-    }
   }
 
   @media screen and (max-width: 767px) {
     .menu {
       position: absolute;
-      //   width: 70%;
+        width: 70%;
       top: -100rem;
       right: 50%;
       left: 50%;
@@ -124,11 +120,14 @@
     .menuIcon {
       display: none;
     }
+    
+    
 
     .menu {
       ul {
         display: flex;
         gap: 1rem;
+          margin: 0 15.6rem;
 
         li {
           font-size: var(--h3FontSize);
