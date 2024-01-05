@@ -136,7 +136,8 @@ const Destinations = () => {
           </ul>
         </div>
 
-        <div className="destinationContainer grid">
+              <div className="destinationContainer grid">
+                  {/* Used a map function to map through the destination data and add what i want */}
           {destinationData.map((destination) => {
             return (
               <div key={destination.id} className="singleDestination">
