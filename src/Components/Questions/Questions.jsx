@@ -53,7 +53,7 @@ const Questions = () => {
 
         <div className="form" data-aos="flip-down">
           <div className="secHeading">
-            <h4>Do You Have any specific questions?</h4>
+            <h4>Do you have any specific questions?</h4>
             <p>
               Please fill in the form below and our dedicated team will get in
               touch with you as soon as possible.
