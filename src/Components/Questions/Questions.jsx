@@ -55,7 +55,7 @@ const Questions = () => {
           <div className="secHeading">
             <h4>Do You Have any specific questions?</h4>
             <p>
-              Please fill the form below and our dedicated team will get in
+              Please fill in the form below and our dedicated team will get in
               touch with you as soon as possible.
             </p>
           </div>
