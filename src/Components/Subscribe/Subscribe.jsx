@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+// Using the useEffect hook to trigger the animation side-effect
 const Subscribe = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
