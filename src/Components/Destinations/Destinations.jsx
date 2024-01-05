@@ -130,9 +130,9 @@ const Destinations = () => {
             <li className="active">All</li>
             <li>Recommended</li>
             <li>Beach</li>
-            <li>Park</li>
+            <li>Parks</li>
             <li>Nature</li>
-            <li>Mountain</li>
+            <li>Mountains</li>
           </ul>
         </div>
 
