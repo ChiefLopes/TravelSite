@@ -3,7 +3,7 @@ import "./home.scss";
 // Imported Icons
 import { AiOutlineSwapRight } from "react-icons/ai";
 
-// Imported Assets
+// Imported Assets/Media
 import VideoBg from "../../Asset/Baloons.mp4";
 import photo1 from "../../Asset/photo1.jpg";
 import photo2 from "../../Asset/photo2.jpg";
