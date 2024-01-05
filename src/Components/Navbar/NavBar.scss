@@ -70,6 +70,10 @@
       box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
     }
 
+    ul {
+    //   margin: 0 2rem;
+    }
+
     li {
       font-size: var(--h3FontSize);
       font-weight: 500;
@@ -105,10 +109,10 @@
   .showNavbar {
     top: 8rem;
   }
-  
+
   .btn {
     margin: 0 30px;
-}
+  }
 }
 
 // Media Queries
@@ -129,7 +133,7 @@
       ul {
         display: flex;
         gap: 1rem;
-        margin: 0 15.6rem;
+        // margin: 0 2rem;
 
         li {
           font-size: var(--h3FontSize);
