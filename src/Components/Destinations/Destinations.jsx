@@ -129,7 +129,7 @@ const Destinations = () => {
           <ul className="flex">
             <li className="active">All</li>
             <li>Recommended</li>
-            <li>Beach</li>
+            <li>Beaches</li>
             <li>Parks</li>
             <li>Natures</li>
             <li>Mountains</li>
