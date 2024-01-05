@@ -45,7 +45,7 @@ const Questions = () => {
           />
           <Accordion
             title="What essential items should I pick for my adventure?"
-            desc="Pack appropriate clothings,toiletries, travel documents(passport, visa, etc), essential medications and any specific gear needed for your adventure(e.g hiking boots, snorkeling gear)."
+            desc="Pack appropriate clothings,t oiletries, travel documents(passport, visa, etc), essential medications and any specific gear needed for your adventure(e.g hiking boots, snorkeling gear)."
             active={active}
             setActive={setActive}
           />
