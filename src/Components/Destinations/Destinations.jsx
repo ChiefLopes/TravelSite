@@ -131,7 +131,7 @@ const Destinations = () => {
             <li>Recommended</li>
             <li>Beach</li>
             <li>Parks</li>
-            <li>Nature</li>
+            <li>Natures</li>
             <li>Mountains</li>
           </ul>
         </div>
