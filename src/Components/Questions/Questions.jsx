@@ -14,7 +14,7 @@ const Questions = () => {
   });
 
   const [active, setActive] = useState(
-    "How do I choose the right destination for me.?"
+    "How do I choose the right destination for me..?"
   );
 
   return (
