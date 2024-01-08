@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 
-// Imported Library
+// Imported Library for scroll
 import Aos from "aos";
 import "aos/dist/aos.css";
 
