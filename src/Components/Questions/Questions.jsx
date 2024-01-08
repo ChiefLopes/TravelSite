@@ -38,7 +38,7 @@ const Questions = () => {
             setActive={setActive}
           />
           <Accordion
-            title="How can i find budget-friendly option travel options and deals?"
+            title="How can I find budget-friendly option travel options and deals?"
             desc="Look for travel deals, discounts on flights and accommodations, and consider using travel apps or websites that offer competitive prices. Being flexible with your travel dates can also help you find better deals."
             active={active}
             setActive={setActive}
