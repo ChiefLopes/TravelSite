@@ -1,5 +1,5 @@
 import "./home.scss";
-// import { use
+// import { 
 // Imported Icons
 import { AiOutlineSwapRight } from "react-icons/ai";
 
