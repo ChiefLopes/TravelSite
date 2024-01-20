@@ -10,9 +10,7 @@ import photo2 from "../../Asset/photo2.jpg";
 import photo3 from "../../Asset/Photo3.jpg";
 import photo4 from "../../Asset/photo4.jpg";
 
-// Imported Library for scroll animation
-// import Aos from "aos";
-// import "aos/dist/aos.css";
+
 
 const Home = () => {
     
